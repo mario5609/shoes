@@ -1,0 +1,116 @@
+@media screen and (max-width: 825px){
+    body{
+        background-color:rgb(254, 239, 219)
+    }
+    /* navbar */
+    .nav_middle{
+        display: none;
+    }
+    .icon_text{
+        display: none;
+    }
+    #shop{
+        display: none;
+    }
+    .dropdown{
+        margin: auto;
+        position: relative;
+        display: contents;
+        
+    }
+    .dropdown_content{
+        display: none;
+        z-index: 1;
+        position: absolute;
+        right: 0px;
+        margin-top: 100px;
+        padding-left: 25px;
+        padding-right: 20px;
+        width: fit-content;
+        background-color: red;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+    .dropdown_content a{
+        margin: auto;
+        padding: 10px;
+        text-decoration: none;
+        display: flex;
+    }
+    #menu_icon{
+        position: absolute;
+        top: 20px;
+        right: 40px;
+    }
+    .dropdown:hover .dropdown_content{
+        display: block;
+    }
+
+
+    /* home */
+    .home, .shop, .updates{
+        text-align: center;
+        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+    }
+    .content, .shop .content{
+        margin: auto;
+    }
+    .home .background_text{
+        top: 58%;
+        right: 2%;
+        font-size: 75px;
+    }
+    .slider_holder{
+        margin: auto;
+        width: 8cm;
+    }
+    .image_position1{
+        margin-right: 80px;
+
+    }
+    /* shop */
+    .shop button{
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .shop img, .updates img{
+        margin:60px auto;
+    }
+    .shop .circles{
+        left: 20%;
+    }
+    .shop .circle_small{
+        top: 450px;
+    }
+    .shop .circle_medium{
+        top: 770px;
+    }
+    .updates .circle_medium_2{
+        position: absolute;
+        top: 65%;
+        right: 22%;
+        z-index:-2;
+        content: ' ';
+        border-style: solid;
+        border-color: rgba(237, 245, 249, 0.322);
+        border-width: 20px;
+        width: 300px;
+        height: 300px;
+        border-radius: 200px;
+        background-color:rgba(252, 1, 1, 0.434);
+    }
+}
+
+@media screen and (max-width: 550px){
+    .home .background_text{
+        top:72%;
+        right: 5px;
+        font-size: 50px;
+    }
+    .updates .circle_medium_2{
+        top: 70%;
+        right: 18%;
+
+    }
+}
